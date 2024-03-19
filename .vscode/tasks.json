@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "command": "tsc",
+    "problemMatcher": "$tsc-watch",
+    "echoCommand": true,
+    "tasks": [
+        {
+            "label": "Watch all",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "watch::bluffGame",
+                "watch::demo"
+            ],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "watch::bluffGame",
+            "type": "typescript",
+            "tsconfig": "workspaces/bluffGame/tsconfig.json",
+            "option": "watch",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "group": "build",
+        },
+        {
+            "label": "watch::demo",
+            "type": "typescript",
+            "tsconfig": "workspaces/demo/tsconfig.json",
+            "option": "watch",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "group": "build",
+        },
+    ]
+}

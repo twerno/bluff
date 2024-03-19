@@ -1,0 +1,14 @@
+{
+  "name": "praktyki",
+  "version": "1.0.0",
+  "description": "Zadania dla praktykantów",
+  "main": "index.js",
+  "scripts": {
+    "demo": "npm run demo -w @bluff/demo"
+  },
+  "author": "Tomasz Werno",
+  "license": "ISC",
+  "workspaces": [
+    "workspaces/*"
+  ]
+}

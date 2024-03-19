@@ -1,0 +1,20 @@
+{
+    "exclude": [
+        "**/*.test.ts",
+        "**/*.stub.ts",
+        "node_modules",
+        "dist"
+    ],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "declarationMap": true,
+        "moduleResolution": "node"
+    }
+}

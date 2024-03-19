@@ -1,0 +1,22 @@
+{
+  "name": "@bluff/demo",
+  "version": "1.0.0",
+  "description": "DEMO",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "demo": "node dist/index.js"
+  },
+  "author": "Tomasz Werno",
+  "license": "ISC",
+  "dependencies": {
+    "@bluff/game": "",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.29"
+  }
+}
